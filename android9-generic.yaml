@@ -38,6 +38,11 @@ actions:
 
   - action: run
     chroot: true
+    description: Enable SSH and USB network
+    command: sed -i 's/PasswordAuthentication=no/PasswordAuthentication=yes/g' /etc/init/ssh.override && sed -i 's/manual/start on startup/g' /etc/init/ssh.override && sed -i 's/manual/start on startup/g' /etc/init/usb-tethering.conf
+
+  - action: run
+    chroot: true
     description: Setting password on phablet user
     command: echo phablet:phablet | chpasswd
 
