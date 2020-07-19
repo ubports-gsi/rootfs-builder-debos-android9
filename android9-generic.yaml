@@ -43,6 +43,11 @@ actions:
 
   - action: run
     chroot: true
+    description: Disable biometryd
+    command sed -i 's/exec \/usr\/bin\/biometryd run/sleep 300/g' /etc/init/biometryd.conf
+
+  - action: run
+    chroot: true
     description: Setting password on phablet user
     command: echo phablet:phablet | chpasswd
 
