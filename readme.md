@@ -1,5 +1,7 @@
 ### Debos build recipies
 
+Android9 ubuntu touch build status: [![Build Status](https://oldpc.mrcyjanek.net:443/ci/job/ubports-gsi-rootfs-builder-debos-android9/badge/icon)](https://oldpc.mrcyjanek.net:443/ci/job/ubports-gsi-rootfs-builder-debos-android9/)
+
 This uses debos to build (sdcard) images for devices
 
 
