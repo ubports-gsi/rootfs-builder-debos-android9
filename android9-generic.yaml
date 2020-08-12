@@ -43,8 +43,8 @@ actions:
 
   - action: run
     chroot: true
-    description: Disable biometryd
-    command: sed -i 's/exec \/usr\/bin\/biometryd run/sleep 300/g' /etc/init/biometryd.conf
+    description: Hang biometryd for 300 seconds when crashes
+    command: sed -i 's/biometryd run/biometryd ; sleep 300/g' /etc/init/biometryd.conf
 
   - action: run
     chroot: true
