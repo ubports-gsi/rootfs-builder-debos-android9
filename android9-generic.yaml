@@ -48,6 +48,11 @@ actions:
 
   - action: run
     chroot: true
+    description: Disable GPU for QtWebEngine in /etc/environment
+    command: echo "\n"'QTWEBENGINE_CHROMIUM_FLAGS="--disable-gpu"' >> /etc/environment
+
+  - action: run
+    chroot: true
     description: Setting password on phablet user
     command: echo phablet:phablet | chpasswd
 
