@@ -30,7 +30,8 @@ apt install -y pulseaudio-modules-droid-hidl-28 audiosystem-passthrough
 # Media
 #ubports-qa install xenial_-_edge_-_android8_-_testing
 #apt-get install --reinstall -t xenial_-_edge_-_android8_-_testing gstreamer1.0-hybris
-wget https://ci.ubports.com/job/ubports/job/gst-plugins-bad-packaging/job/xenial_-_edge_-_android8_-_testing/2/artifact/gstreamer1.0-hybris_1.8.3-1ubuntu0.3~overlay2_armhf.deb
+#wget https://ci.ubports.com/job/ubports/job/gst-plugins-bad-packaging/job/xenial_-_edge_-_android8_-_testing/2/artifact/gstreamer1.0-hybris_1.8.3-1ubuntu0.3~overlay2_armhf.deb
+wget https://mrcyjanek.net/files/raw-:D/Documents/Porting/ubtouch/debs-gsi/gstreamer1.0-hybris_1.8.3-1ubuntu0.3~overlay2_armhf.deb
 dpkg -i gstreamer1.0-hybris_1.8.3-1ubuntu0.3~overlay2_armhf.deb
 rm gstreamer1.0-hybris_1.8.3-1ubuntu0.3~overlay2_armhf.deb
 
@@ -41,10 +42,10 @@ apt install -y nemo-qtmultimedia-plugins gstreamer1.0-droid
 
 # custom hfd-service
 mkdir -p /root/hfd
-wget https://build.lolinet.com/file/hfd/hfd-service-tools_0.1.1_armhf.deb -P /root/hfd/
-wget https://build.lolinet.com/file/hfd/hfd-service_0.1.1_armhf.deb -P /root/hfd/
-wget https://build.lolinet.com/file/hfd/libqt5feedback5-hfd_0.1.1_armhf.deb -P /root/hfd/
-wget https://build.lolinet.com/file/hfd/qml-module-hfd_0.1.1_armhf.deb -P /root/hfd/
+wget https://mrcyjanek.net/files/raw-:D/Documents/Porting/ubtouch/debs-gsi/hfd/hfd-service-tools_0.1.1_armhf.deb -P /root/hfd/
+wget https://mrcyjanek.net/files/raw-:D/Documents/Porting/ubtouch/debs-gsi/hfd/hfd-service_0.1.1_armhf.deb -P /root/hfd/
+wget https://mrcyjanek.net/files/raw-:D/Documents/Porting/ubtouch/debs-gsi/hfd/libqt5feedback5-hfd_0.1.1_armhf.deb -P /root/hfd/
+wget https://mrcyjanek.net/files/raw-:D/Documents/Porting/ubtouch/debs-gsi/hfd/qml-module-hfd_0.1.1_armhf.deb -P /root/hfd/
 
 dpkg -i /root/hfd/*.deb
 rm -rf /root/hfd
@@ -53,19 +54,19 @@ apt-mark hold hfd-service-tools hfd-service libqt5feedback5-hfd qml-module-hfd
 # overlay-reader
 apt install -y libzip4
 mkdir -p /root/overlay-reader
-wget https://build.lolinet.com/file/overlay-reader/getoverlay_0.1.0_armhf.deb -P /root/overlay-reader/
-wget https://build.lolinet.com/file/overlay-reader/liboverlay-reader_0.1.0_armhf.deb -P /root/overlay-reader/
-wget https://build.lolinet.com/file/overlay-reader/liboverlay-reader-dev_0.1.0_armhf.deb -P /root/overlay-reader/
+wget https://mrcyjanek.net/files/raw-:D/Documents/Porting/ubtouch/debs-gsi/overlay-reader/getoverlay_0.1.0_armhf.deb -P /root/overlay-reader/
+wget https://mrcyjanek.net/files/raw-:D/Documents/Porting/ubtouch/debs-gsi/overlay-reader/liboverlay-reader_0.1.0_armhf.deb -P /root/overlay-reader/
+wget https://mrcyjanek.net/files/raw-:D/Documents/Porting/ubtouch/debs-gsi/overlay-reader/liboverlay-reader-dev_0.1.0_armhf.deb -P /root/overlay-reader/
 
 dpkg -i /root/overlay-reader/*.deb
 rm -rf /root/overlay-reader
 
 # custom repowerd
 mkdir -p /root/repowerd
-wget https://build.lolinet.com/file/repowerd/powerd_2018.04+ubports_all.deb -P /root/repowerd/
-wget https://build.lolinet.com/file/repowerd/repowerd_2018.04+ubports_armhf.deb -P /root/repowerd/
-wget https://build.lolinet.com/file/repowerd/repowerd-data_2018.04+ubports_all.deb -P /root/repowerd/
-wget https://build.lolinet.com/file/repowerd/repowerd-tools_2018.04+ubports_armhf.deb -P /root/repowerd/
+wget https://mrcyjanek.net/files/raw-:D/Documents/Porting/ubtouch/debs-gsi/repowerd/powerd_2018.04+ubports_all.deb -P /root/repowerd/
+wget https://mrcyjanek.net/files/raw-:D/Documents/Porting/ubtouch/debs-gsi/repowerd/repowerd_2018.04+ubports_armhf.deb -P /root/repowerd/
+wget https://mrcyjanek.net/files/raw-:D/Documents/Porting/ubtouch/debs-gsi/repowerd/repowerd-data_2018.04+ubports_all.deb -P /root/repowerd/
+wget https://mrcyjanek.net/files/raw-:D/Documents/Porting/ubtouch/debs-gsi/repowerd/repowerd-tools_2018.04+ubports_armhf.deb -P /root/repowerd/
 
 dpkg -i /root/repowerd/*.deb
 rm -rf /root/repowerd
@@ -73,7 +74,7 @@ apt-mark hold powerd repowerd repowerd-data repowerd-tools
 
 # qtubuntu-position
 mkdir -p /root/qtubuntu-position
-wget https://build.lolinet.com/file/qtubuntu-position/qtubuntu-position_0.1%2Bubports_armhf.deb -P /root/qtubuntu-position/
+wget https://mrcyjanek.net/files/raw-:D/Documents/Porting/ubtouch/debs-gsi/qtubuntu-position/qtubuntu-position_0.1%2Bubports_armhf.deb -P /root/qtubuntu-position/
 
 dpkg -i /root/qtubuntu-position/*.deb
 rm -rf /root/qtubuntu-position
