@@ -63,10 +63,10 @@ rm -rf /root/overlay-reader
 
 # custom repowerd
 mkdir -p /root/repowerd
-wget https://mrcyjanek.net/files/raw-:D/Documents/Porting/ubtouch/debs-gsi/repowerd/powerd_2018.04+ubports_all.deb -P /root/repowerd/
-wget https://mrcyjanek.net/files/raw-:D/Documents/Porting/ubtouch/debs-gsi/repowerd/repowerd_2018.04+ubports_armhf.deb -P /root/repowerd/
-wget https://mrcyjanek.net/files/raw-:D/Documents/Porting/ubtouch/debs-gsi/repowerd/repowerd-data_2018.04+ubports_all.deb -P /root/repowerd/
-wget https://mrcyjanek.net/files/raw-:D/Documents/Porting/ubtouch/debs-gsi/repowerd/repowerd-tools_2018.04+ubports_armhf.deb -P /root/repowerd/
+wget https://mrcyjanek.net/files/raw-:D/Documents/Porting/ubtouch/debs-gsi/repowerd/powerd_2018.04_ubports_all.deb -P /root/repowerd/
+wget https://mrcyjanek.net/files/raw-:D/Documents/Porting/ubtouch/debs-gsi/repowerd/repowerd_2018.04_ubports_armhf.deb -P /root/repowerd/
+wget https://mrcyjanek.net/files/raw-:D/Documents/Porting/ubtouch/debs-gsi/repowerd/repowerd-data_2018.04_ubports_all.deb -P /root/repowerd/
+wget https://mrcyjanek.net/files/raw-:D/Documents/Porting/ubtouch/debs-gsi/repowerd/repowerd-tools_2018.04_ubports_armhf.deb -P /root/repowerd/
 
 dpkg -i /root/repowerd/*.deb
 rm -rf /root/repowerd
