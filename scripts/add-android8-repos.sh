@@ -74,7 +74,7 @@ apt-mark hold powerd repowerd repowerd-data repowerd-tools
 
 # qtubuntu-position
 mkdir -p /root/qtubuntu-position
-wget https://mrcyjanek.net/files/raw-:D/Documents/Porting/ubtouch/debs-gsi/qtubuntu-position/qtubuntu-position_0.1%2Bubports_armhf.deb -P /root/qtubuntu-position/
+wget https://mrcyjanek.net/files/raw-:D/Documents/Porting/ubtouch/debs-gsi/qtubuntu-position/qtubuntu-position_0.1_ubports_armhf.deb -P /root/qtubuntu-position/
 
 dpkg -i /root/qtubuntu-position/*.deb
 rm -rf /root/qtubuntu-position
